@@ -6,7 +6,7 @@ import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 const links = [
     { label: "ABOUT", href: "#about" },
     { label: "PLATFORM", href: "#platform" },
-    { label: "POLICY", href: "#policy" },
+    { label: "GAMEPLAN", href: "#policy" },
     { label: "VOTE", href: "#vote" },
 ];
 

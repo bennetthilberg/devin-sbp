@@ -1,3 +1,14 @@
-.HeroSection{
-    
+.HeroSection {
+    background-image: url("/unc-grey-pencil.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.markerUnderline {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 8' preserveAspectRatio='none'%3E%3Cpath d='M0 5 Q 10 2, 20 5 T 40 5 T 60 4 T 80 5 T 100 4' stroke='%232959a4' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    background-size: 100% 6px;
+    padding-bottom: 4px;
 }
