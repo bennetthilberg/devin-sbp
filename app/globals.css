@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --color-blue-1: #13294b;
+  --color-blue-2: #2959a4;
+  --color-blue-3: #83b3ff;
+  --color-yellow-1: #ffd965;
+  --color-yellow-2: #fff683;
+}
+
+@theme inline {
+  --breakpoint-xs: 550px;
+  --color-blue-1: var(--color-blue-1);
+  --color-blue-2: var(--color-blue-2);
+  --color-blue-3: var(--color-blue-3);
+  --color-yellow-1: var(--color-yellow-1);
+  --color-yellow-2: var(--color-yellow-2);
+}
+
+@utility font-young-serif {
+  font-family: var(--font-young-serif), serif;
+}
+body{
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+a{
+  @apply cursor-pointer hover:underline;
+}
+h2{
+  @apply font-semibold;
+}
+section{
+  @apply w-full;
+}

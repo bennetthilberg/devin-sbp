@@ -1,0 +1,95 @@
+.InitialAnim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background-color: var(--color-blue-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16vh;
+    animation: fadeOut 0.5s ease-out 4.2s forwards;
+
+    @media (max-height: 629px) {
+        padding-top: 9vh;
+    }
+
+    .tagline {
+        color: white;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        margin-bottom: 2.5rem;
+
+        @media (max-height: 629px) {
+            margin-bottom: 2.25rem;
+        }
+    }
+
+    .words {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.35rem;
+    }
+
+    .word {
+        color: white;
+        font-size: 48px;
+        font-weight: 800;
+        opacity: 0;
+        animation: wordPop 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .word1 {
+        animation-delay: 0.7s;
+    }
+
+    .word2 {
+        animation-delay: 1.4s;
+    }
+
+    .word3 {
+        animation-delay: 2.1s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .andText {
+        color: white;
+        -webkit-text-stroke: 0;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 0.15rem;
+    }
+
+    .logoContainer {
+        align-self: center;
+        margin-top: 1.75rem;
+        opacity: 0;
+        animation: wordPop 0.3s cubic-bezier(0.16, 1, 0.3, 1) 2.9s forwards;
+    }
+}
+
+@keyframes wordPop {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
