@@ -1,9 +1,11 @@
 import HeroSection from "./components/HeroSection";
+import PrioritiesSection from "./components/PrioritiesSection";
 
 export default function Home() {
   return (
-    <main className="p-3 w-full">
+    <main className="w-full">
       <HeroSection />
+      <PrioritiesSection />
     </main>
   );
 }
