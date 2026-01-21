@@ -128,7 +128,7 @@ export default function VoteSection() {
                 <button
                     type="submit"
                     disabled={isLoading}
-                    className="!w-full max-w-xs mt-2 mb-10 !text-black !bg-blue-3 flex justify-center items-center gap-1 text-[17px] !font-bold self-center disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="!w-full max-w-xs mt-2 mb-12 !text-black !bg-blue-3 flex justify-center items-center gap-1 text-[17px] !font-bold self-center disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                     {isLoading ? (
                         <>
