@@ -13,15 +13,7 @@ export default function Footer() {
                         </span>
                         <TfiNewWindow size={12} />
                     </a>
-                    <div className="flex items-center">
-                        <span>This website is&nbsp;</span>
-                        <a href="https://github.com/bennetthilberg/devin-sbp" className="flex items-center hover:underline gap-1" target="_blank" rel="noopener noreferrer">
-                            <span className="font-semibold">
-                                open source
-                            </span>
-                            <TfiNewWindow size={12} />
-                        </a>
-                    </div>
+                 
                 </div>
             </div>
         </footer>
