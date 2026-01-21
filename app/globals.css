@@ -20,16 +20,50 @@
 @utility font-young-serif {
   font-family: var(--font-young-serif), serif;
 }
-body{
+
+body {
   font-family: var(--font-montserrat), sans-serif;
 }
 
-a{
+a {
   @apply cursor-pointer hover:underline;
 }
-h2{
+
+h2 {
   @apply font-semibold;
 }
-section{
+
+section {
   @apply w-full p-3;
+}
+
+button {
+  @apply bg-blue-2 text-white rounded-full w-fit px-5 py-2 font-semibold;
+}
+
+.heroBackground {
+  /*background-image: url("/unc-grey-pencil.png")*/
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 140% auto;
+  padding-bottom: 2rem;
+
+  @media (min-width: 640px) {
+    background-size: 110% auto;
+    background-position: center 10%;
+  }
+
+  @media (min-width: 768px) {
+    background-size: 100% auto;
+    background-position: center 5%;
+  }
+
+  @media (min-width: 1024px) {
+    background-size: 85% auto;
+    background-position: center top;
+  }
+
+  @media (min-width: 1280px) {
+    background-size: 70% auto;
+  }
 }

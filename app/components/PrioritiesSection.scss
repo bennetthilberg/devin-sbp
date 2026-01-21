@@ -1,0 +1,18 @@
+.PrioritiesSection {
+    position: relative;
+    margin-top: 3rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -2rem;
+        left: 0;
+        right: 0;
+        height: 4rem;
+        background-color: var(--color-blue-1);
+        transform: skewY(-2deg);
+        transform-origin: top left;
+        z-index: -1;
+    }
+  
+}

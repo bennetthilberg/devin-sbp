@@ -5,8 +5,10 @@ import PrioritiesSection from "./components/PrioritiesSection";
 export default function Home() {
   return (
     <main className="w-full">
-      <HeroSection />
-      <MeetDevinSection />
+      <div className="heroBackground">
+        <HeroSection />
+        <MeetDevinSection />
+      </div>
       <PrioritiesSection />
     </main>
   );
