@@ -30,7 +30,7 @@ export default function PrioritiesSection() {
             </div>
 
             <Image
-                className="sm:max-w-lg max-w-[90vw] mx-auto mt-3 mb-4"
+                className="sm:max-w-lg max-w-[89vw] mx-auto mt-3 mb-4"
                 src="/academic-success.png"
                 alt="Devin smiling with a group of students at a formal event"
                 width={1000}
@@ -57,7 +57,7 @@ export default function PrioritiesSection() {
             </div>
 
             <Image
-                className="sm:max-w-lg max-w-[90vw] mx-auto mt-3 mb-4"
+                className="sm:max-w-lg max-w-[89vw] mx-auto mt-3 mb-4"
                 src="/cookout.png"
                 alt="Devin smiling with an anthropomorphic Cookout mascot"
                 width={1000}
@@ -87,7 +87,7 @@ export default function PrioritiesSection() {
             </div>
 
             <Image
-                className="sm:max-w-lg max-w-[90vw] mx-auto mt-3 mb-4"
+                className="sm:max-w-lg max-w-[89vw] mx-auto mt-3 mb-4"
                 src="/uncp.png"
                 alt="Devin wearing a suit in front of a UNCP sign"
                 width={1000}
@@ -113,7 +113,7 @@ export default function PrioritiesSection() {
             </div>
 
             <Image
-                className="sm:max-w-lg max-w-[90vw] mx-auto mt-3 mb-4 "
+                className="sm:max-w-lg max-w-[89vw] mx-auto mt-3 mb-4 "
                 src="/floor.png"
                 alt="Devin smiling with the residents on his floor"
                 width={1000}
