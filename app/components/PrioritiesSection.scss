@@ -1,6 +1,15 @@
 .PrioritiesSection {
     position: relative;
     margin-top: 3rem;
+    padding-bottom: 14vw;
+
+    @media screen and (min-width: 1000px) {
+        padding-bottom: 120px;
+    }
+    h1{
+        z-index: 9999;
+        position: relative;
+    }
 
     &::before {
         content: "";
@@ -9,10 +18,42 @@
         left: 0;
         right: 0;
         height: 4rem;
+
+        @media screen and (min-width: 700px) {
+            height: 6.5rem;
+        }
+
+        @media screen and (min-width: 950px) {
+            height: 8.5rem;
+        }
+
         background-color: var(--color-blue-1);
         transform: skewY(-2deg);
         transform-origin: top left;
         z-index: -1;
     }
-  
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -2rem;
+        left: 0;
+        right: 0;
+        height: 4rem;
+
+        @media screen and (min-width: 700px) {
+            bottom: -3rem;
+            height: 6rem;
+        }
+
+        @media screen and (min-width: 950px) {
+            bottom: -4rem;
+            height: 8rem;
+        }
+
+        background-color: #f3f4f6;
+        transform: skewY(-2deg);
+        transform-origin: top left;
+        z-index: 1;
+    }
 }

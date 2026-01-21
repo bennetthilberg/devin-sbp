@@ -2,6 +2,7 @@ import { Montserrat, Young_Serif } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Nav";
 import InitialAnim from "./components/InitialAnim";
+import Footer from "./components/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         <InitialAnim />
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -16,7 +16,7 @@ export default function InitialAnim() {
     if (!isVisible) return null;
 
     return (
-        <div className="InitialAnim">
+        <div className="InitialAnim z-9999">
             <p className="tagline">BUILDING A CAROLINA THAT&apos;S</p>
             <div className="words">
                 <span className="word word1">FIRST</span>
