@@ -7,10 +7,18 @@ export default function InitialAnim() {
     const [isVisible, setIsVisible] = useState(true);
 
     useEffect(function () {
+        // Disable scrolling while animation plays
+        document.body.style.overflow = "hidden";
+
         const timer = setTimeout(function () {
             setIsVisible(false);
+            document.body.style.overflow = "";
         }, 4600);
-        return function () { clearTimeout(timer); };
+
+        return function () {
+            clearTimeout(timer);
+            document.body.style.overflow = "";
+        };
     }, []);
 
     if (!isVisible) return null;

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MeetDevinSection(){
     return(
-        <section>
+        <section id="about">
             <Image className="w-full max-w-xl self-center mx-auto mb-6" src="/meet-devin-4.png" alt="Devin wearing a suit with a Carolina Blue tie" height={2342} width={3604} />
             <p className="max-w-lg font-medium leading-snug max-w-lg mx-auto">
                 My name is Devin Duncan, and I'm a Public Policy and Media & Journalism major from

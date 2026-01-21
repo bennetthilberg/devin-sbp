@@ -26,13 +26,13 @@ export default function Nav() {
             <div className="xs:hidden ml-auto">
                 <DropdownMenu.Root>
                     <DropdownMenu.Trigger asChild>
-                        <button className="text-white p-2 cursor-pointer outline-none hover:opacity-90 z-999 transition-opacity" aria-label="Menu">
+                        <button className="text-white p-2 cursor-pointer !bg-blue-1 outline-none hover:opacity-90 z-999 transition-opacity" aria-label="Menu">
                             <HamburgerMenuIcon width={24} height={24} />
                         </button>
                     </DropdownMenu.Trigger>
                     <DropdownMenu.Portal>
                         <DropdownMenu.Content
-                            className="bg-blue-2 rounded-md p-2 min-w-[140px] shadow-xl outline-none"
+                            className="bg-blue-1 rounded-md z-9998 p-2 min-w-[140px] shadow-xl outline-none"
                             sideOffset={5}
                             align="end"
                         >
