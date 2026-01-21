@@ -13,7 +13,7 @@ const links = [
 export default function Nav() {
     return (
         <nav className="p-3 w-full bg-blue-1 flex items-center px-4 sm:px-7 md:px-20 space-between">
-            <Image src="/logo-white.svg" alt="Devin for SBP" height={58} width={120} />
+            <Image src="/logo-white.svg" alt="Devin for SBP" height={58} width={120} unoptimized />
 
             {/* Desktop links - visible at xs and above */}
             <div className="hidden xs:flex items-center text-[15px] font-bold gap-6 ml-auto text-white">

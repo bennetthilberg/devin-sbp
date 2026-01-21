@@ -34,7 +34,7 @@ export default function InitialAnim() {
                     FOR ALL
                 </span>
                 <div className="logoContainer">
-                    <Image src="/logo-white.svg" alt="Logo" width={178} height={90} />
+                    <Image src="/logo-white.svg" alt="Logo" width={178} height={90} unoptimized />
                 </div>
             </div>
         </div>
