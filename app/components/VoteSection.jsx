@@ -1,5 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
+import { FaInstagram } from "react-icons/fa";
+
 import { FaChevronRight, FaCheck } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { ImSpinner8 } from "react-icons/im";
@@ -60,7 +62,7 @@ export default function VoteSection() {
 
     async function handleSubmit(e) {
         e.preventDefault();
-        
+
         setIsLoading(true);
         setStatus({ type: null, message: "" });
 
@@ -114,20 +116,19 @@ export default function VoteSection() {
                         />
                     </div>
                     {status.message && (
-                        <div className={`text-sm font-medium mb-2 p-2 rounded ${
-                            status.type === "success" 
-                                ? "bg-green-500/20 text-green-200" 
+                        <div className={`text-sm font-medium mb-2 p-2 rounded ${status.type === "success"
+                                ? "bg-green-500/20 text-green-200"
                                 : "bg-red-500/20 text-red-200"
-                        }`}>
+                            }`}>
                             {status.type === "success" && <FaCheck className="inline mr-1.5 -mt-0.5" size={12} />}
                             {status.message}
                         </div>
                     )}
                 </div>
-                <button 
+                <button
                     type="submit"
                     disabled={isLoading}
-                    className="!w-full max-w-xs mt-2 mb-20 !text-black !bg-blue-3 flex justify-center items-center gap-1 text-[17px] !font-bold self-center disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="!w-full max-w-xs mt-2 mb-10 !text-black !bg-blue-3 flex justify-center items-center gap-1 text-[17px] !font-bold self-center disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                     {isLoading ? (
                         <>
@@ -142,6 +143,11 @@ export default function VoteSection() {
                     )}
                 </button>
             </form>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/devinforsbp" className="mx-auto py-2 px-3 rounded-lg flex items-center mb-9 text-md font-medium gap-1 bg-blue-1 brightness-120">
+                <FaInstagram size={20}/>
+                <p>Follow Devin on Instagram</p>
+                <FaChevronRight size={10} />
+            </a>
         </section>
     )
 }

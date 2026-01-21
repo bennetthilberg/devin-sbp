@@ -14,6 +14,7 @@ export default function HeroSection() {
                 <span>Get ready to vote</span>
                 <FaChevronRight size={14}/>
             </a>
+            <iframe className="mx-auto mt-8" width="560" height="315" src="https://www.youtube.com/embed/ujmegtyO2J0?si=Hvwu1x5DSt9qztO_" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </section>
     );
 }
