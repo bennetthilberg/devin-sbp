@@ -1,5 +1,7 @@
 import Image from "next/image";
 import "./PrioritiesSection.scss";
+import { FaChevronRight } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function PrioritiesSection() {
     return (
@@ -9,6 +11,12 @@ export default function PrioritiesSection() {
                 <p className="text-white font-medium mt-2">
                     For a Carolina that's first, best, and for all
                 </p>
+                <Link target="_blank" href="/Devin Duncan Policy Book.pdf" className="mt-5 flex items-center self-center bg-blue-1 text-white gap-1 border-1 hover:ring-1 ring-blue-3 transition-all border-white hover:shadow-xl !no-underline font-semibold rounded-full px-5 text-[17px] py-2">
+                    <span>
+                        Read the policy book
+                    </span>
+                    <FaChevronRight size={14} />
+                </Link>
             </div>
 
             <div className="p-3 mx-auto max-w-2xl">
