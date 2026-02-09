@@ -6,6 +6,7 @@ import { FaChevronRight, FaCheck } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { ImSpinner8 } from "react-icons/im";
 import { submitReminderEmail } from "../actions/submitReminderEmail";
+import Link from "next/link";
 
 export default function VoteSection() {
     const [timeLeft, setTimeLeft] = useState(null);
@@ -83,68 +84,21 @@ export default function VoteSection() {
     }
 
     return (
-        <section id="vote" className="bg-blue-1 w-full flex flex-col items-center text-white">
-            <form className="flex flex-col" onSubmit={handleSubmit}>
+        <section id="vote" className="bg-blue-1 w-full text-white">
+            <h3 className="font-[550] text-2xl mb-1 mt-3 text-center mx-auto">
+                Polls are <strong className="markerUnderlineLight font-[550]">open now</strong>
+            </h3>
+            <Link target="_blank" rel="noopener noreferrer" prefetch={true} href="https://heellife.unc.edu/submitter/election/start/714525" className="w-fit mx-auto flex items-center self-center mt-5 gap-1 bg-blue-3 text-black rounded-full px-6 py-2 font-semibold shadow-md hover:brightness-103 xs:order-2 hover:shadow-lg text-lg !no-underline transition-all duration-200">
+                <span>Vote now</span>
+                <FaChevronRight size={14} />
+            </Link>
+            <p className="max-w-sm font-medium mx-auto mt-5 mb-12 text-center">
+                Rank Devin Duncan #1 for Student Body President on the HeelLife election form
+            </p>
 
-                <h3 className="font-[550] text-lg mb-1 mt-3">
-                    Polls open in
-                </h3>
-                <h1 className="text-4xl font-bold mb-2">
-                    {formatTime()}
-                </h1>
-                <p className="font-[540] text-xl mb-7">
-                    Vote for Devin starting <strong className="markerUnderlineLight">February 10th at 5 PM</strong> on HeelLife
-                </p>
-                <p className="font-semibold mb-4 text-lg mx-auto">
-                    Get an email reminder to vote
-                </p>
-                <div className="max-w-xs w-full self-center">
-                    <label htmlFor="email-reminder" className="font-semibold text-[14px]">
-                        Email address
-                    </label>
-                    <div className="relative mt-1 mb-2">
-                        <MdEmail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-600 text-lg" />
-                        <input
-                            type="email"
-                            id="email-reminder"
-                            name="email"
-                            value={email}
-                            onChange={function (e) { setEmail(e.target.value); }}
-                            className="w-full !pl-9"
-                            aria-label="Email address for vote reminder"
-                            disabled={isLoading}
-                        />
-                    </div>
-                    {status.message && (
-                        <div className={`text-sm font-medium mb-2 p-2 rounded ${status.type === "success"
-                                ? "bg-green-500/20 text-green-200"
-                                : "bg-red-500/20 text-red-200"
-                            }`}>
-                            {status.type === "success" && <FaCheck className="inline mr-1.5 -mt-0.5" size={12} />}
-                            {status.message}
-                        </div>
-                    )}
-                </div>
-                <button
-                    type="submit"
-                    disabled={isLoading}
-                    className="!w-full max-w-xs mt-2 mb-12 !text-black !bg-blue-3 flex justify-center items-center gap-1 text-[17px] !font-bold self-center disabled:opacity-70 disabled:cursor-not-allowed"
-                >
-                    {isLoading ? (
-                        <>
-                            <ImSpinner8 className="animate-spin" size={16} />
-                            <span>Submitting...</span>
-                        </>
-                    ) : (
-                        <>
-                            <span>Remind me</span>
-                            <FaChevronRight size={15} />
-                        </>
-                    )}
-                </button>
-            </form>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/devinforsbp" className="mx-auto py-2 px-3 rounded-lg flex items-center mb-9 text-md font-medium gap-1 bg-blue-1 brightness-120">
-                <FaInstagram size={20}/>
+
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/devinforsbp" className="w-fit mx-auto py-2 px-3 rounded-lg flex items-center mb-9 text-md font-medium gap-1 bg-blue-1 brightness-120">
+                <FaInstagram size={20} />
                 <p>Follow Devin on Instagram</p>
                 <FaChevronRight size={10} />
             </a>

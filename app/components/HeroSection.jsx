@@ -31,10 +31,10 @@ export default function HeroSection() {
                     <FaChevronRight size={14} />
                 </Link>
                 */}
-                <a href="#vote" className="flex items-center self-center mt-9 xs:mt-8 gap-1 bg-blue-1 text-white rounded-full px-6 py-2 font-semibold shadow-md hover:brightness-103 xs:order-2 hover:shadow-lg text-lg !no-underline transition-all duration-200">
-                    <span>Remind me to vote</span>
+                <Link target="_blank" rel="noopener noreferrer" prefetch={true} href="https://heellife.unc.edu/submitter/election/start/714525" className="flex items-center self-center mt-9 xs:mt-8 gap-1 bg-blue-1 text-white rounded-full px-6 py-2 font-semibold shadow-md hover:brightness-103 xs:order-2 hover:shadow-lg text-lg !no-underline transition-all duration-200">
+                    <span>Vote now</span>
                     <FaChevronRight size={14} />
-                </a>
+                </Link>
             </div>
             {showVideo && (
                 <iframe className="mx-auto mt-8 w-90/100 max-w-lg h-[220px] xs:h-[288px]" src="https://www.youtube.com/embed/ujmegtyO2J0?si=Hvwu1x5DSt9qztO_&autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
