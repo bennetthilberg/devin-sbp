@@ -7,7 +7,7 @@ const links = [
     { label: "ABOUT", href: "#about" },
     { label: "PLATFORM", href: "#platform" },
     { label: "GAMEPLAN", href: "#policy" },
-    { label: "VOTE", href: "#vote" },
+    //{ label: "VOTE", href: "#vote" },
 ];
 
 export default function Nav() {

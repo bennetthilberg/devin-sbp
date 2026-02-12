@@ -13,7 +13,7 @@ export default function Home() {
       </div>
       <PrioritiesSection />
       <PlanSection />
-      <VoteSection />
+      {/*<VoteSection />*/}
     </main>
   );
 }
