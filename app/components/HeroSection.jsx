@@ -24,17 +24,17 @@ export default function HeroSection() {
             <p className="self-center  text-2xl font-[550] tracking-tight text-center max-w-lg lg:max-w-xl lg:text-3xl">
                 As Student Body President, Devin Duncan will <strong className="markerUnderline delay1 text-blue-1 font-[700]">reimagine advising</strong>, <strong className="markerUnderline delay2 text-blue-1 font-[700]">support basic needs</strong>, and <strong className="markerUnderline delay3 text-blue-1 font-[700]">guarantee transparency</strong>.
             </p>
-            <div className="mx-auto max-w-lg mt-7 bg-blue-1 px-2 py-4 rounded-lg">
-                <h3 className="font-bold text-2xl mx-auto text-center text-white">
-                    Devin has been elected UNC's 2026-2027 Student Body President!
+            <div className="mx-auto max-w-lg mt-7 bg-blue-1 px-3 py-4 rounded-lg flex flex-col items-center">
+                <h3 className="font-bold text-xl mx-auto text-center text-white">
+                    Executive Council applications are open!
                 </h3>
-                <div className="h-[2px] bg-blue-3 w-[80%] mx-auto my-3"/>
-                <p className="text-white font-medium text-center">
-                    Transition updates will be posted here soon.
+                <p className="text-white font-medium text-center mt-2">
+                    Applications for Vice President, Treasurer, Secretary and Chief of Cabinet are now open.
                 </p>
-                <p className="text-white font-medium text-center">
-                    Thank you for your support!
-                </p>
+                <Link className="!no-underline hover:shadow-lg flex items-center gap-1 px-4 py-2 mt-3 bg-blue-3 font-semibold rounded-full" href="https://go.unc.edu/ECO2026" target="_blank" rel="noopener noreferrer">
+                    <span>Apply now</span>
+                    <FaChevronRight />
+                </Link>
             </div>
             {showVideo && (
                 <iframe className="mx-auto mt-8 w-90/100 max-w-lg h-[220px] xs:h-[288px]" src="https://www.youtube.com/embed/ujmegtyO2J0?si=Hvwu1x5DSt9qztO_&autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
